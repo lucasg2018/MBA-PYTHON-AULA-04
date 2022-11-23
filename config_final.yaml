@@ -1,0 +1,31 @@
+##ARQUIVO DE CONFIGURAÇÃO YAML
+
+#Informação que deseja pesquisar nos sites IEEE e Science Direct
+search: java
+
+#Tipos de dados que deseja salvar o arquivo. Obs.: As opções disponíveis são csv, json e yaml.
+type_save: csv, parquet
+
+#Filtros para serem aplicados na exportação dos arquivos
+filter_title:       
+filter_year: 
+
+#Caminhos dos arquivos de origem
+jcs_origem: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Source\jcs_2020.csv
+scimago_origem: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Source\scimagojr 2020.csv
+acm_origem: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Source\ACM.bib
+ieee_origem: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Source\IEE.bib
+science_direct_origem: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Source\ScienceDirect.bib
+
+#Caminhos dos arquivos de destino
+csv_dest: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Export\export_final.csv
+json_dest: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Export\export_final.json
+yaml_dest: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Export\export_final.yaml
+parquet_gzip_dest: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Export\export_final.gzip
+xml_dest: C:\Users\lucas.de.lima.souza\Documents\MBA\Projeto 3\Export\export_final.xml
+
+#String de conexão Banco de dados
+server: localhost
+database: PythonETL
+username: python
+password: 123456
